@@ -1,0 +1,46 @@
+22:36:50 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec4_MIO_implementation\v\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+22:36:53 INFO  : XSDB server has started successfully.
+22:36:53 INFO  : Processing command line option -hwspec C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec4_MIO_implementation/v/project_1/project_1.sdk/design_1_wrapper.hdf.
+22:44:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:44:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+22:45:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:45:12 INFO  : Jtag cable 'Digilent Zed 210248A49A6B' is selected.
+22:45:12 INFO  : 'jtag frequency' command is executed.
+22:45:12 INFO  : Sourcing of 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec4_MIO_implementation/v/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:45:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+22:45:13 INFO  : Hardware design information is loaded from 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec4_MIO_implementation/v/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:45:13 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+22:45:14 INFO  : 'stop' command is executed.
+22:45:21 INFO  : 'ps7_init' command is executed.
+22:45:21 INFO  : 'ps7_post_config' command is executed.
+22:45:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:45:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:45:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:45:21 INFO  : The application 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec4_MIO_implementation/v/project_1/project_1.sdk/gpio_mio_test/Debug/gpio_mio_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:45:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec4_MIO_implementation/v/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+loadhw C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec4_MIO_implementation/v/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+dow C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec4_MIO_implementation/v/project_1/project_1.sdk/gpio_mio_test/Debug/gpio_mio_test.elf
+----------------End of Script----------------
+
+22:45:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:45:22 INFO  : 'con' command is executed.
+22:45:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+con
+----------------End of Script----------------
+
+22:45:22 INFO  : Launch script is exported to file 'C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec4_MIO_implementation\v\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_gpio_mio_test.elf.tcl'
+23:14:33 INFO  : Disconnected from the channel tcfchan#1.
