@@ -1,5 +1,5 @@
 #### Drivers related to GPIO and MIO
-##### 1. Opening and Importing this software project:
+##### 1. Opening and Importing this software project in SDK environment:
   i.  Select File > Import. The Import wizard opens.
   ii. Select General > Existing Projects into Workspace and click Next.
   iii.Select either the Select root directory or Select archive file option button, and click the associated Browse button to locate the 
