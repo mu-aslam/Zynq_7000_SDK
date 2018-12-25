@@ -1,0 +1,302 @@
+15:47:10 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec5_EMIO_implementation\vivado\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+15:47:12 INFO  : XSDB server has started successfully.
+15:47:14 INFO  : Processing command line option -hwspec C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+16:44:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49A6B" && level==0} -index 1' command is executed.
+16:44:35 INFO  : FPGA configured successfully with bitstream "C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:44:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49A6B" && level==0} -index 1' command is executed.
+16:44:42 INFO  : 'fpga -state' command is executed.
+16:44:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:44:42 INFO  : Jtag cable 'Digilent Zed 210248A49A6B' is selected.
+16:44:42 INFO  : 'jtag frequency' command is executed.
+16:44:43 INFO  : Sourcing of 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:44:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+16:44:43 INFO  : Hardware design information is loaded from 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:44:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+16:44:43 INFO  : 'stop' command is executed.
+16:44:48 INFO  : 'ps7_init' command is executed.
+16:44:48 INFO  : 'ps7_post_config' command is executed.
+16:44:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:44:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:44:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:44:49 INFO  : The application 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:44:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+loadhw C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+dow C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+16:44:49 INFO  : Memory regions updated for context APU
+16:44:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:44:49 INFO  : 'con' command is executed.
+16:44:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+con
+----------------End of Script----------------
+
+16:44:49 INFO  : Launch script is exported to file 'C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec5_EMIO_implementation\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_test.elf.tcl'
+16:53:51 INFO  : Disconnected from the channel tcfchan#1.
+16:53:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49A6B" && level==0} -index 1' command is executed.
+16:53:51 INFO  : 'fpga -state' command is executed.
+16:53:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:51 INFO  : Jtag cable 'Digilent Zed 210248A49A6B' is selected.
+16:53:52 INFO  : 'jtag frequency' command is executed.
+16:53:52 INFO  : Sourcing of 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:53:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+16:53:55 INFO  : Hardware design information is loaded from 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:53:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+16:53:56 INFO  : 'stop' command is executed.
+16:54:00 INFO  : 'ps7_init' command is executed.
+16:54:01 INFO  : 'ps7_post_config' command is executed.
+16:54:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:54:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:54:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:54:01 INFO  : The application 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:54:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+loadhw C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+dow C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+16:54:01 INFO  : Memory regions updated for context APU
+16:54:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:54:02 INFO  : 'con' command is executed.
+16:54:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+con
+----------------End of Script----------------
+
+16:54:02 INFO  : Launch script is exported to file 'C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec5_EMIO_implementation\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_test.elf.tcl'
+17:05:28 INFO  : Disconnected from the channel tcfchan#2.
+17:05:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49A6B" && level==0} -index 1' command is executed.
+17:05:29 INFO  : 'fpga -state' command is executed.
+17:05:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:05:29 INFO  : Jtag cable 'Digilent Zed 210248A49A6B' is selected.
+17:05:29 INFO  : 'jtag frequency' command is executed.
+17:05:29 INFO  : Sourcing of 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:05:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+17:05:32 INFO  : Hardware design information is loaded from 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:05:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+17:05:32 INFO  : 'stop' command is executed.
+17:05:47 INFO  : 'ps7_init' command is executed.
+17:05:48 INFO  : 'ps7_post_config' command is executed.
+17:05:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:05:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:48 INFO  : The application 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:05:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+loadhw C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+dow C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+17:05:49 INFO  : Memory regions updated for context APU
+17:05:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:05:49 INFO  : 'con' command is executed.
+17:05:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+con
+----------------End of Script----------------
+
+17:05:49 INFO  : Launch script is exported to file 'C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec5_EMIO_implementation\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_test.elf.tcl'
+17:07:48 INFO  : Disconnected from the channel tcfchan#3.
+17:07:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49A6B" && level==0} -index 1' command is executed.
+17:07:49 INFO  : 'fpga -state' command is executed.
+17:07:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:07:49 INFO  : Jtag cable 'Digilent Zed 210248A49A6B' is selected.
+17:07:49 INFO  : 'jtag frequency' command is executed.
+17:07:49 INFO  : Sourcing of 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:07:50 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+17:07:53 INFO  : Hardware design information is loaded from 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:07:53 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+17:07:53 INFO  : 'stop' command is executed.
+17:07:58 INFO  : 'ps7_init' command is executed.
+17:07:58 INFO  : 'ps7_post_config' command is executed.
+17:07:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:07:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:07:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:07:59 INFO  : The application 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:07:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+loadhw C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+dow C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+17:07:59 INFO  : Memory regions updated for context APU
+17:08:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:08:00 INFO  : 'con' command is executed.
+17:08:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+con
+----------------End of Script----------------
+
+17:08:00 INFO  : Launch script is exported to file 'C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec5_EMIO_implementation\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_test.elf.tcl'
+21:14:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49A6B" && level==0} -index 1' command is executed.
+21:14:42 INFO  : FPGA configured successfully with bitstream "C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.runs/impl_1/design_1_wrapper.bit"
+21:14:54 INFO  : Disconnected from the channel tcfchan#4.
+21:14:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49A6B" && level==0} -index 1' command is executed.
+21:14:54 INFO  : 'fpga -state' command is executed.
+21:14:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:55 INFO  : Jtag cable 'Digilent Zed 210248A49A6B' is selected.
+21:14:55 INFO  : 'jtag frequency' command is executed.
+21:14:55 INFO  : Sourcing of 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:14:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+21:14:58 INFO  : Hardware design information is loaded from 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:14:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+21:14:58 INFO  : 'stop' command is executed.
+21:15:01 INFO  : 'ps7_init' command is executed.
+21:15:01 INFO  : 'ps7_post_config' command is executed.
+21:15:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:15:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:15:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:15:01 INFO  : The application 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:15:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+loadhw C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+dow C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+21:15:01 INFO  : Memory regions updated for context APU
+21:15:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:15:01 INFO  : 'con' command is executed.
+21:15:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+con
+----------------End of Script----------------
+
+21:15:01 INFO  : Launch script is exported to file 'C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec5_EMIO_implementation\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_test.elf.tcl'
+21:15:49 INFO  : Disconnected from the channel tcfchan#5.
+21:15:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49A6B" && level==0} -index 1' command is executed.
+21:15:49 INFO  : 'fpga -state' command is executed.
+21:15:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:15:49 INFO  : Jtag cable 'Digilent Zed 210248A49A6B' is selected.
+21:15:49 INFO  : 'jtag frequency' command is executed.
+21:15:49 INFO  : Sourcing of 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:15:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+21:15:52 INFO  : Hardware design information is loaded from 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:15:52 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+21:15:52 INFO  : 'stop' command is executed.
+21:15:55 INFO  : 'ps7_init' command is executed.
+21:15:55 INFO  : 'ps7_post_config' command is executed.
+21:15:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:15:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:15:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:15:55 INFO  : The application 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:15:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+loadhw C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+dow C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+21:15:55 INFO  : Memory regions updated for context APU
+21:15:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:15:55 INFO  : 'con' command is executed.
+21:15:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+con
+----------------End of Script----------------
+
+21:15:55 INFO  : Launch script is exported to file 'C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec5_EMIO_implementation\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_test.elf.tcl'
+02:30:59 INFO  : Disconnected from the channel tcfchan#6.
+02:37:23 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec5_EMIO_implementation\vivado\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+02:37:25 INFO  : XSDB server has started successfully.
+02:37:27 INFO  : Processing command line option -hwspec C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper.hdf.
+02:37:27 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+03:03:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:03:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49A6B" && level==0} -index 1' command is executed.
+03:03:48 INFO  : FPGA configured successfully with bitstream "C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/TCL/project_1/project_1.runs/impl_1/design_1_wrapper.bit"
+03:03:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49A6B" && level==0} -index 1' command is executed.
+03:03:55 INFO  : 'fpga -state' command is executed.
+03:03:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:03:55 INFO  : Jtag cable 'Digilent Zed 210248A49A6B' is selected.
+03:03:55 INFO  : 'jtag frequency' command is executed.
+03:03:55 INFO  : Sourcing of 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:03:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+03:03:56 INFO  : Hardware design information is loaded from 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+03:03:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0' command is executed.
+03:03:56 INFO  : 'stop' command is executed.
+03:04:07 INFO  : 'ps7_init' command is executed.
+03:04:08 INFO  : 'ps7_post_config' command is executed.
+03:04:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:04:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+03:04:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:04:11 INFO  : The application 'C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:04:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+loadhw C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+dow C:/Users/maslam/Desktop/IDLAB/gitHub/documents/Non_PhDworks/FPGAdesign_com/Lec5_EMIO_implementation/vivado/project_1/project_1.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+03:04:12 INFO  : Memory regions updated for context APU
+03:04:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:04:13 INFO  : 'con' command is executed.
+03:04:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248A49A6B"} -index 0
+con
+----------------End of Script----------------
+
+03:04:13 INFO  : Launch script is exported to file 'C:\Users\maslam\Desktop\IDLAB\gitHub\documents\Non_PhDworks\FPGAdesign_com\Lec5_EMIO_implementation\vivado\project_1\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_test.elf.tcl'
