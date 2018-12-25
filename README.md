@@ -7,4 +7,4 @@
   iv. In the Projects area, select the project or projects to import.
   v.  Select Copy projects into workspace if you do want to copy the project files to your current workspace location.
   vi. Click Finish to start the import. If SDK prompts a message to overwrite a file, select Yes.
-##### 2. Connect the zedboard and run the SDK (for more information you can watch following video:)
+##### 2. Connect the zedboard and run the SDK (for more information you can watch following video https://youtu.be/qRKlKWHhkUc :)
